@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "cognologos-auth-service"
+name = "food-helper-fastapi"
 version = "0.1.0"
 description = ""
-authors = ["Arthur <baginian.artur@yandex.ru>"]
+authors = ["Vlad <gricenkovlad007@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
