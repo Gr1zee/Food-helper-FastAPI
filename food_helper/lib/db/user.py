@@ -3,10 +3,10 @@ from datetime import datetime, timezone
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 
-from auth_service.core.exceptions.user import UserEmailAlreadyExistsException, UserNotFoundException
-from auth_service.core.security import Encryptor
-from auth_service.lib.models import UserModel
-from auth_service.lib.schemas.user import UserCreateSchema, UserSchema
+from food_helper.core.exceptions.user import UserEmailAlreadyExistsException, UserNotFoundException
+from food_helper.core.security import Encryptor
+from food_helper.lib.models import UserModel
+from food_helper.lib.schemas.user import UserCreateSchema, UserSchema
 
 
 async def is_email_exists(db: AsyncSession, email: str) -> bool:

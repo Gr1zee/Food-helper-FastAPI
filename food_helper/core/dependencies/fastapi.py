@@ -7,8 +7,8 @@ from redis.asyncio import ConnectionPool, Redis as AbstractRedis
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import sessionmaker
 
-from auth_service.core.config import AppConfig
-from auth_service.lib.schemas.auth import TokenRedisData
+from food_helper.core.config import AppConfig
+from food_helper.lib.schemas.auth import TokenRedisData
 
 from ..security import Encryptor
 from . import constructors as app_depends

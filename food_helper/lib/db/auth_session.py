@@ -5,10 +5,10 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import joinedload
 
-from auth_service.core.exceptions.auth_session import AuthSessionNotFoundException
-from auth_service.lib.models import AuthSessionModel
-from auth_service.lib.schemas.auth_session import AuthSessionSchema
-from auth_service.lib.schemas.enums.redis import AuthRedisKeyType
+from food_helper.core.exceptions.auth_session import AuthSessionNotFoundException
+from food_helper.lib.models import AuthSessionModel
+from food_helper.lib.schemas.auth_session import AuthSessionSchema
+from food_helper.lib.schemas.enums.redis import AuthRedisKeyType
 
 
 async def get_auth_session_model(

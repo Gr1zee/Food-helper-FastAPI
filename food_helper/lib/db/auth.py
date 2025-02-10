@@ -4,12 +4,12 @@ from uuid import UUID, uuid4
 from redis.asyncio import Redis
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from auth_service.core.exceptions.auth import BadAuthDataException
-from auth_service.core.security import Encryptor
-from auth_service.lib.db import auth_session as auth_session_db, user as user_db
-from auth_service.lib.models import AuthSessionModel
-from auth_service.lib.schemas.auth import TokenCreateSchema, TokenRedisData, TokenSchema
-from auth_service.lib.schemas.enums.redis import AuthRedisKeyType
+from food_helper.core.exceptions.auth import BadAuthDataException
+from food_helper.core.security import Encryptor
+from food_helper.lib.db import auth_session as auth_session_db, user as user_db
+from food_helper.lib.models import AuthSessionModel
+from food_helper.lib.schemas.auth import TokenCreateSchema, TokenRedisData, TokenSchema
+from food_helper.lib.schemas.enums.redis import AuthRedisKeyType
 
 
 def raise_user_password(password: str, password_hash: str) -> None:

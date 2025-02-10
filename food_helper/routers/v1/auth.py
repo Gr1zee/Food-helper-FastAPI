@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Response
 
-from auth_service.core.dependencies.fastapi import (
+from food_helper.core.dependencies.fastapi import (
     ClientHostDependency,
     DatabaseDependency,
     EncryptorDependency,
@@ -9,8 +9,8 @@ from auth_service.core.dependencies.fastapi import (
     TokenDataDependency,
     UserAgentDependency,
 )
-from auth_service.lib.db import auth as auth_db, auth_session as auth_session_db
-from auth_service.lib.schemas.auth import TokenCreateSchema, TokenSchema
+from food_helper.lib.db import auth as auth_db, auth_session as auth_session_db
+from food_helper.lib.schemas.auth import TokenCreateSchema, TokenSchema
 
 
 router = APIRouter(tags=["auth"], prefix="/auth")

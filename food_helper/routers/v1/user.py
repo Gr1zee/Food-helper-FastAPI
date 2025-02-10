@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 
-from auth_service.core.dependencies.fastapi import DatabaseDependency, TokenDataDependency
-from auth_service.lib.db import user as user_db
-from auth_service.lib.schemas.user import UserCreateSchema, UserSchema
+from food_helper.core.dependencies.fastapi import DatabaseDependency, TokenDataDependency
+from food_helper.lib.db import user as user_db
+from food_helper.lib.schemas.user import UserCreateSchema, UserSchema
 
 
 router = APIRouter(tags=["user"], prefix="/users")

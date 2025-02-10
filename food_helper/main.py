@@ -4,10 +4,10 @@ from typing import AsyncGenerator
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
 
-from auth_service.core.config import AppConfig
-from auth_service.core.dependencies import constructors as app_depends, fastapi as stubs
-from auth_service.core.exceptions.abc import AbstractException
-from auth_service.routers import router
+from food_helper.core.config import AppConfig
+from food_helper.core.dependencies import constructors as app_depends, fastapi as stubs
+from food_helper.core.exceptions.abc import AbstractException
+from food_helper.routers import router
 
 
 @asynccontextmanager

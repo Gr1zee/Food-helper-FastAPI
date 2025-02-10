@@ -8,11 +8,11 @@ from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.ext.asyncio import AsyncEngine, AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
 
-from auth_service.core.config import AppConfig
-from auth_service.core.exceptions.abc import UnauthorizedException
-from auth_service.core.security import Encryptor
-from auth_service.lib.schemas.auth import TokenRedisData
-from auth_service.lib.schemas.enums.redis import AuthRedisKeyType
+from food_helper.core.config import AppConfig
+from food_helper.core.exceptions.abc import UnauthorizedException
+from food_helper.core.security import Encryptor
+from food_helper.lib.schemas.auth import TokenRedisData
+from food_helper.lib.schemas.enums.redis import AuthRedisKeyType
 
 
 def db_engine(database_url: str) -> AsyncEngine:

@@ -10,8 +10,8 @@ from sqlalchemy import engine_from_config, pool
 from sqlalchemy.engine import Connection
 from sqlalchemy.ext.asyncio import AsyncEngine
 
-from auth_service.lib.models import *  # noqa
-from auth_service.lib.models.abc import AbstractModel
+from food_helper.lib.models import *  # noqa
+from food_helper.lib.models.abc import AbstractModel
 
 
 # this is the Alembic Config object, which provides
