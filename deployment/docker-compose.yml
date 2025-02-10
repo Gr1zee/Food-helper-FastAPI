@@ -1,6 +1,6 @@
 services:
   app:
-    image: &app_image ghcr.io/cognologos/cognologos-auth-service
+    image: &app_image ghcr.io/Gr1zee/Food-helper-FastAPI
 
     restart: unless-stopped
 
