@@ -13,6 +13,7 @@ RUN curl -sSL https://install.python-poetry.org | python3 - \
 WORKDIR /app
 
 COPY pyproject.toml poetry.lock* ./
+COPY README.md ./
 
 RUN python3 -m pip install poetry \
     && poetry config virtualenvs.create false \
